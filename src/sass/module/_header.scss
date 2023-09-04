@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.header {
+    background: rgba(230, 230, 250, 1);
+}
+
+.header-inner {
+    display: block;
+    max-width: rem(1500);
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq(md) {
+        // 
+    }
+}

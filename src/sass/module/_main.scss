@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.main {
+    display: block;
+    max-width: rem(1500);
+    width: 100%;
+    background: rgba(175, 238, 238, 1);
+    padding: rem(30);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.main-service h2 {
+    display: block;
+    padding-bottom: rem(30);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.main-works h2 {
+    display: block;
+    padding-bottom: rem(30);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.main-works-cards.cards-wrapper {
+    @include mq(md) {
+        grid-template-columns: repeat(4, 1fr);
+        // 
+    }
+}

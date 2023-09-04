@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.aside {
+    display: block;
+    background: rgba(154, 205, 50, 1);
+
+    @include mq(md) {
+        display: none;
+        // 
+    }
+}

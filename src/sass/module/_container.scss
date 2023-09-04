@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.container {
+    display: block;
+    background: #ee82ee;
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq(md) {
+        display: flex;
+        max-width: rem(1500);
+        // 
+    }
+}

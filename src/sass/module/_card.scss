@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.card {
+    @include mq(md) {
+        display: block;
+
+        // 
+    }
+}
+
+.card figure {
+    display: block;
+    overflow: hidden;
+    padding-top: 63%;
+    position: relative;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.card figure img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.card-title,
+.card-read {
+    padding: rem(3);
+    text-align: left;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.cards-box {
+    display: block;
+    text-align: center;
+    padding-bottom: rem(30);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.cards-wrapper {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // 
+    }
+}

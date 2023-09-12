@@ -5,10 +5,36 @@
 }
 
 .header-inner {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: rem(1500);
     width: 100%;
     margin: 0 auto;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.header-menu {
+    display: none;
+
+    @include mq(md) {
+        display: flex;
+        // 
+    }
+}
+
+.header-menu a {
+    display: block;
+    padding: 0 rem(30);
+}
+
+.header-menu li.blue {
+    display: block;
+    background: rgba(0, 0, 205, 1);
+    color: rgba(255, 255, 255, 1);
 
     @include mq(md) {
         // 

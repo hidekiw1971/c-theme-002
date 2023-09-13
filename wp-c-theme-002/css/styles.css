@@ -226,7 +226,10 @@ select::-ms-expand {
   display: block;
   background: #ee82ee;
   width: 100%;
+  height: 200dvh;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -249,15 +252,58 @@ select::-ms-expand {
   margin: 0 auto;
 }
 .header {
+  display: block;
+  width: 100%;
   background: rgb(230, 230, 250);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+  z-index: 1;
+}
+
+.header.hidden {
+  top: -100px;
 }
 
 .header-inner {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1500px;
   max-width: 93.75rem;
   width: 100%;
   margin: 0 auto;
+}
+.header-menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header-menu a {
+  display: block;
+  padding: 0 30px;
+  padding: 0 1.875rem;
+}
+
+.header-menu li.blue {
+  display: block;
+  background: rgb(0, 0, 205);
+  color: rgb(255, 255, 255);
 }
 .main {
   display: block;

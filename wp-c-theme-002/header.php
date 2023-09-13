@@ -19,12 +19,23 @@
     <!-- ファビコン -->
     <link rel="icon" href="<?php echo get_template_directory_uri() ?>/images/common/favicon.ico" />
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
     <header class="header">
-        <title><?php bloginfo(''); ?></title>
-        <div class="header-inner">ヘッダー</div>
+        <div class="header-inner">
+            <h1>タイトル</h1>
+            <nav>
+                <ul class="header-menu">
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">企業情報</a></li>
+                    <li><a href="#">事業情報</a></li>
+                    <li><a href="#">アクセス</a></li>
+                    <li><a href="#">採用情報</a></li>
+                    <li class="blue"><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>

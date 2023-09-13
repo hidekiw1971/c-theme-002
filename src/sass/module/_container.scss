@@ -4,7 +4,9 @@
     display: block;
     background: #ee82ee;
     width: 100%;
+    height: 200dvh;
     margin: 0 auto;
+    padding-top: rem(40);
 
     @include mq(md) {
         display: flex;
